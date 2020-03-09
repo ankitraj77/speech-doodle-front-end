@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,41 +9,26 @@
 		/>
 		<title>Speech Doodle</title>
 	</head>
-	<body>
-		<h1>Speech Doodle</h1>
-		<div class="canvas-container"></div>
-		<canvas class="visualizer" width="500" height="60px"></canvas>
-
+	<body style="padding:50px;">
+		<h1>Speech to text test</h1>
 		<div id="controls">
 			<button id="recordButton">Record</button>
 			<button id="transcribeButton" disabled>Get transcription</button>
 		</div>
 		<div id="output"></div>
-
-		<!-- RECORDER JS -->
 		<script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
 
-		<section class="sound-clips"></section>
-
-		<article>
-			<p></p>
-		</article>
-
-		<!--  -->
+		<!-- CLIENT JS -->
 		<script>
-			// set up basic variables for app
 			let rec = null
 			let audioStream = null
 
 			const recordButton = document.getElementById('recordButton')
 			const transcribeButton = document.getElementById('transcribeButton')
+
 			recordButton.addEventListener('click', startRecording)
 			transcribeButton.addEventListener('click', transcribeText)
 
-			const soundClips = document.querySelector('.sound-clips')
-			const canvas = document.querySelector('.visualizer')
-
-			// RECORD
 			function startRecording() {
 				let constraints = { audio: true, video: false }
 
@@ -67,7 +52,6 @@
 					})
 			}
 
-			// TRANSCRIBE
 			function transcribeText() {
 				transcribeButton.disabled = true
 				recordButton.disabled = false
@@ -76,22 +60,8 @@
 				rec.exportWAV(uploadSoundData)
 			}
 
-			// UPLOAD SOUND
 			function uploadSoundData(blob) {
 				let filename = new Date().toISOString()
-
-				// == PLAYER
-				const clipContainer = document.querySelector('article')
-				const audio = document.createElement('audio')
-				const clipLabel = document.querySelector('article>p')
-				audio.setAttribute('controls', '')
-				clipLabel.textContent = 'fileName'
-				clipContainer.appendChild(audio)
-				//
-				const audioURL = window.URL.createObjectURL(blob)
-				audio.src = audioURL
-				// =====
-
 				let xhr = new XMLHttpRequest()
 				xhr.onload = function(e) {
 					if (this.readyState === 4) {
@@ -102,15 +72,9 @@
 				}
 				let formData = new FormData()
 				formData.append('audio_data', blob, filename)
-				xhr.open(
-					'POST',
-					'https://speech-doodle-api.herokuapp.com/upload_sound',
-					true
-				)
+				xhr.open('POST', 'http://localhost:3000/upload_sound', true)
 				xhr.send(formData)
 			}
-
-			// visualiser setup - create web audio api context and canvas
 		</script>
 	</body>
 </html>
