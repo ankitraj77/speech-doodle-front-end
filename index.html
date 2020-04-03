@@ -16,13 +16,14 @@
 			<div class="yodae__wrapper">
 				<header>
 					<h1>YODAE</h1>
-					<div class="introduction">
+					<div id="yodae-text" class="text-container">
 						Hello, I’m YODAE. I can draw almost anything that comes to mind via voice command. 
 					</div>
 				</header>
 				<div class="canvas-container">
 					<canvas class="visualizer" width="500" height="60px"></canvas>
 				</div>
+				<div id="yodae-response" class="text-container">this is where the noun word will go</div>
 				<div id="controls">
 					<button class="btn-primary" id="recordButton">
 						<img src="assets/microphone.svg">
@@ -30,7 +31,6 @@
 					<button id="transcribeButton" disabled>Get transcription</button>
 				</div>
 				<div id="output"></div>
-		
 				<!-- RECORDER JS -->
 				<script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
 		

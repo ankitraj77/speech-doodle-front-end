@@ -2,16 +2,27 @@
 let rec = null
 let audioStream = null
 
+const yodaeText = document.getElementById('yodae-text')
+
 const recordButton = document.getElementById('recordButton')
 const transcribeButton = document.getElementById('transcribeButton')
-recordButton.addEventListener('click', startRecording)
-transcribeButton.addEventListener('click', transcribeText)
+// recordButton.addEventListener('click', startRecording)
+recordButton.addEventListener('mousedown', startRecording)
+window.addEventListener('mouseup', transcribeText)
+// transcribeButton.addEventListener('click', transcribeText)
 
 const soundClips = document.querySelector('.sound-clips')
 const canvas = document.querySelector('.visualizer')
 
+let state = null;
+
 // RECORD
 function startRecording() {
+    state = "recording";
+    console.log("startRecording");
+    
+    yodaeText.innerHTML = "Please speak now."
+
     let constraints = { audio: true, video: false }
 
     recordButton.disabled = true
@@ -36,11 +47,15 @@ function startRecording() {
 
 // TRANSCRIBE
 function transcribeText() {
-    transcribeButton.disabled = true
-    recordButton.disabled = false
-    rec.stop()
-    audioStream.getAudioTracks()[0].stop()
-    rec.exportWAV(uploadSoundData)
+    
+    if (state == "recording") {
+        console.log("transcribeText")
+        transcribeButton.disabled = true
+        recordButton.disabled = false
+        rec.stop()
+        audioStream.getAudioTracks()[0].stop()
+        rec.exportWAV(uploadSoundData)
+    }
 }
 
 // UPLOAD SOUND
@@ -62,6 +77,8 @@ function uploadSoundData(blob) {
     let xhr = new XMLHttpRequest()
     xhr.onload = function(e) {
         if (this.readyState === 4) {
+            console.log(e.target.responseText);
+            yodaeText.innerHTML = JSON.parse(e.target.responseText).transcript;
             document.getElementById(
                 'output'
             ).innerHTML = `<br><br><strong>Result: </strong>${e.target.responseText}`
