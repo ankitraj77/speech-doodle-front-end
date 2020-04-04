@@ -34,6 +34,8 @@
 			// set up basic variables for app
 			let rec = null
 			let audioStream = null
+			const LOCALHOST_API_URL = 'http://localhost:3000/upload_sound'
+			const API_URL = 'https://speech-doodle-api.herokuapp.com/upload_sound'
 
 			const recordButton = document.getElementById('recordButton')
 			const transcribeButton = document.getElementById('transcribeButton')
@@ -55,9 +57,7 @@
 					.then(function(stream) {
 						const audioContext = new window.AudioContext()
 						audioStream = stream
-						const input = audioContext.createMediaStreamSource(
-							stream
-						)
+						const input = audioContext.createMediaStreamSource(stream)
 						rec = new Recorder(input, { numChannels: 1 })
 						rec.record()
 					})
@@ -102,11 +102,7 @@
 				}
 				let formData = new FormData()
 				formData.append('audio_data', blob, filename)
-				xhr.open(
-					'POST',
-					'https://speech-doodle-api.herokuapp.com/upload_sound',
-					true
-				)
+				xhr.open('POST', LOCALHOST_API_URL, true)
 				xhr.send(formData)
 			}
 
