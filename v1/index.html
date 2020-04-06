@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <link
+			rel="stylesheet"
+			href="//cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css"
+		/> -->
+		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="css/style.css">
+		<title>YODAE</title>
+	</head>
+	<body>
+		<div class="container">
+			<!-- Centered link -->
+			<br>
+			<div class="branding">
+				<a href="/"><img src="assets/YODAE-Full-Logo.svg" alt="Logo for YODAE" width="300"></a>
+			</div>
+			<br>
+			<div class="row">
+				<div class="column">
+					<div class="bg-wrapper">
+						<div class="canvas-container">
+							<canvas class="visualizer" width="500" height="60px"></canvas>
+						</div>
+						<div id="yodae-response" class="text-container"></div>
+						<div class="input-btn">
+							<button class="btn-rounded" id="recordButton">
+								<img src="assets/microphone.svg">
+							</button>
+							<button id="transcribeButton" disabled>Get transcription</button>
+						</div>
+						<h2 style="text-align: center;" class="instruction" id="yodae-text">Speak something and wait for the awesomeness. </h2>
+
+					</div>
+				</div>
+
+
+				<!-- <div class="column">
+					<div class="bg-wrapper">
+						<div class="canvas-container">
+							<canvas class="visualizer" width="500" height="60px"></canvas>
+						</div>
+						<div id="output"></div>
+						<!-- RECORDER JS -->
+						<!-- <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+				
+						<section class="sound-clips"></section>
+				
+						<article>
+							<p></p>
+						</article> 
+					</div>
+				</div> -->
+			</div>
+			<br>
+			<div class="row branding">
+				<p style="color: #afb9b9;">YODAE is an interactive application that helps visualise spoken words. 
+					It is powered by <a href="/googlelink">API_NAME</a>. 
+					
+				</p>
+			</div>
+		</div>
+	</body>
+	<script src="js/main.js"></script>
+</html>
