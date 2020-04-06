@@ -15,5 +15,8 @@
 	"bugs": {
 		"url": "https://github.com/ankitraj77/speech-doodle-front-end/issues"
 	},
-	"homepage": "https://github.com/ankitraj77/speech-doodle-front-end#readme"
+	"homepage": "https://github.com/ankitraj77/speech-doodle-front-end#readme",
+	"dependencies": {
+		"milligram": "^1.3.0"
+	}
 }
