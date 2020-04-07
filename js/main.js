@@ -131,14 +131,14 @@ function newSketchObj() {
 		background(255)
 		doodle = undefined
 		doodle = sketchObj[imageCount].drawing
-		// console.log(doodle)
+		console.log(doodle)
 		imageCount++
 	} else {
 		imageCount = 0
 	}
 }
 function draw() {
-	if (doodle) {
+	if (doodle && doodle.length > 0) {
 		for (let i = 0; i < doodle.length; i++) {
 			// console.log(doodle)
 			let x = doodle[strokeIndex][0][index]
@@ -198,11 +198,11 @@ function visualize(stream) {
 
 		analyser.getByteTimeDomainData(dataArray)
 
-		canvasCtx.fillStyle = 'rgb(200, 200, 200)'
+		canvasCtx.fillStyle = 'rgb(255, 255, 255)'
 		canvasCtx.fillRect(0, 0, WIDTH, HEIGHT)
 
-		canvasCtx.lineWidth = 2
-		canvasCtx.strokeStyle = 'rgb(0, 0, 0)'
+		canvasCtx.lineWidth = 5
+		canvasCtx.strokeStyle = 'rgb(35, 41, 214)'
 
 		canvasCtx.beginPath()
 
