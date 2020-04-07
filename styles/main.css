@@ -1,84 +1,105 @@
+body {
+	background-color: #fafafa;
+}
 .yodae {
-    font-family: 'Ubuntu', sans-serif;
-    color: #2228D6;
-    width: min-content;
-    margin: 1em auto;
-    background: #FAFAFA;
-    padding: 2em 3em;
+	font-family: 'Ubuntu', sans-serif;
+	color: #2228d6;
+	width: 600px;
+	margin: 1em auto;
+	background: #ffffff;
+	padding: 2em 3em;
 }
 
 .yodae__wrapper {
-    min-height: 570px;
-    display: flex;
-    flex-direction: column
+	min-height: 570px;
+	display: flex;
+	flex-direction: column;
 }
 
 header h1 {
-    text-align: center;
+	text-align: center;
 }
 
-.text-container {
-    justify-content: center;
-    padding: 0 7rem;
-    margin-bottom: 2.5rem;
+.nouns {
+	justify-content: center;
+	padding: 0 7rem;
+	margin-bottom: 2.5rem;
 }
 #yodae-response {
-    text-align: center;
-    font-size: 28px;
-    line-height: 30px;
-    font-weight: 900;
+	text-align: center;
+	font-size: 28px;
+	line-height: 30px;
+	font-weight: 900;
 }
 
 .canvas-container {
-    flex-grow: inherit;
-    flex: 1
+	flex-grow: inherit;
+	flex: 1;
 }
 
 button {
-    background-color: #B9BBF0;
-    color: #2228D6;
-    width: 80px;
-    height: 80px;
-    position: relative;
-    border: 0;
-    border-radius: 50%;
-    box-shadow: 0px 1px 8px #BFBFBF;
+	background-color: #b9bbf0;
+	color: #2228d6;
+	width: 80px;
+	height: 80px;
+	position: relative;
+	border: 0;
+	border-radius: 50%;
+	box-shadow: 0px 1px 8px #bfbfbf;
 }
 
 #transcribeButton {
-    display: none;
+	display: none;
 }
 
 #controls {
-    display: flex;
-    justify-content: center;
-    bottom: 20px;
+	display: flex;
+	justify-content: center;
+	bottom: 20px;
 }
 
 #output {
-    display: none;
+	display: none;
 }
 
 button:focus {
-    background-color: #989BF2;
-    border-color: #989BF2;
-    color: #fff;
+	background-color: #989bf2;
+	border-color: #989bf2;
+	color: #fff;
 }
 button:hover {
-    background-color: #989BF2;
-    border-color: #989BF2;
-    color: #fff;
+	background-color: #989bf2;
+	border-color: #989bf2;
+	color: #fff;
 }
 button img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .btn-primary {
-    margin-right: 2rem;
+	margin-right: 2rem;
 }
 
 article {
-    opacity: 0;
+	opacity: 0;
+}
+
+/* === */
+.visualizer {
+	width: 100%;
+	height: 80px;
+}
+#sketchContainer {
+	text-align: center;
+}
+#sketchContainer canvas {
+	margin: 20px;
+}
+.show {
+	display: block;
+}
+.hide {
+	display: none;
 }

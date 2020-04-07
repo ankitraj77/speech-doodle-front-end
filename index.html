@@ -12,6 +12,10 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="styles/main.css" />
+
+		<!-- P5 js -->
+		<script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+
 		<title>YODAE</title>
 	</head>
 	<body>
@@ -25,10 +29,13 @@
 					</div>
 				</header>
 				<div class="canvas-container">
-					<canvas class="visualizer" width="500" height="60px"></canvas>
+					<canvas class="visualizer show"></canvas>
 				</div>
-				<div id="yodae-response" class="text-container">
-					this is where the noun word will go
+				<!-- SKETCH CANVAS -->
+				<div id="sketchContainer"></div>
+				<!-- SKETCH -->
+				<div id="yodae-response" class="nouns">
+					<!-- this is where the noun word will go -->
 				</div>
 				<div id="controls">
 					<button class="btn-primary" id="recordButton">
