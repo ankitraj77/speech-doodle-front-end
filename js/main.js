@@ -12,6 +12,13 @@ let nouns = document.querySelector('.nouns')
 const recordButton = document.getElementById('recordButton')
 const transcribeButton = document.getElementById('transcribeButton')
 
+// P5
+let index = 0
+let strokeIndex = 0
+let prevx, prevy
+let imageCount = 0
+// ==
+
 // Record audio while RECORD button is pressed
 // TOUCHSTART AND TOUCHEND events for smartphones
 // MOUSEDOWN AND MOUSEUP events for desktops
@@ -98,8 +105,20 @@ function uploadSoundData(blob) {
 			nouns.innerHTML = data.things
 
 			// ASSIGN SKETCH DATA TO sketchObj
-			sketchObj = data.doodles
-			if (data.doodles.length > 0) doodle = sketchObj[0].drawing // to intitiate p5 animation
+			// First clear and reset existing variables
+			sketchObj = null
+			doodle = []
+			prevx = null
+			prevy = null
+			strokeIndex = 0
+			index = 0
+			imageCount = 0
+			clearCanvas()
+
+			if (data.doodles.length > 0) {
+				sketchObj = data.doodles
+				doodle = sketchObj[0].drawing // to intitiate p5 animation
+			}
 
 			// PROCESSED - DONE
 			recordButton.disabled = false
@@ -114,21 +133,16 @@ function uploadSoundData(blob) {
 
 // ======================== P5 Canvas ANIMATION
 
-let index = 0
-let strokeIndex = 0
-let prevx, prevy
-let imageCount = 0
-
 // p5 setup
 function setup() {
 	let canvas = createCanvas(255, 255)
 	canvas.parent('sketchContainer')
-	background(255)
+	background('#27273a')
 }
 // assign one image at a time
 function newSketchObj() {
 	if (imageCount < sketchObj.length) {
-		background(255)
+		background('#27273a')
 		doodle = undefined
 		doodle = sketchObj[imageCount].drawing
 		// console.log(doodle)
@@ -136,6 +150,7 @@ function newSketchObj() {
 	} else {
 		imageCount = 0
 	}
+	// console.log(doodle);
 }
 function draw() {
 	if (doodle) {
@@ -143,7 +158,7 @@ function draw() {
 			// console.log(doodle)
 			let x = doodle[strokeIndex][0][index]
 			let y = doodle[strokeIndex][1][index]
-			stroke(0)
+			stroke('rgba(255,255,255,0.8)')
 			// console.log(x)
 
 			strokeWeight(3)
@@ -170,6 +185,9 @@ function draw() {
 	}
 }
 
+function clearCanvas() {
+	clear()
+}
 // ======================== SOUND WAVE VISUALIZER
 let audioCtx
 const canvasCtx = waveCanvas.getContext('2d')
@@ -198,11 +216,11 @@ function visualize(stream) {
 
 		analyser.getByteTimeDomainData(dataArray)
 
-		canvasCtx.fillStyle = 'rgb(200, 200, 200)'
+		canvasCtx.fillStyle = '#27273a'
 		canvasCtx.fillRect(0, 0, WIDTH, HEIGHT)
 
 		canvasCtx.lineWidth = 2
-		canvasCtx.strokeStyle = 'rgb(0, 0, 0)'
+		canvasCtx.strokeStyle = 'rgb(255, 255, 255, 0.8)'
 
 		canvasCtx.beginPath()
 
