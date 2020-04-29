@@ -32,8 +32,8 @@ Navbar
 }
 
 .navbar.is-fresh .navbar-brand img {
-  max-height: 36px !important;
-  height: 36px;
+  max-height: 100px !important;
+  height: 100px;
 }
 
 .navbar.is-fresh .navbar-brand:hover .navbar-item {
@@ -515,7 +515,7 @@ Cards and Card content styles
 }
 
 .feature-card .card-text {
-  padding: 0 40px;
+  padding: 0 15px;
 }
 
 .feature-card .card-text p {

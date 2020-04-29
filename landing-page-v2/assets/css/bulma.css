@@ -2533,7 +2533,8 @@ a.box:active {
 .content h6 {
   color: #363636;
   font-weight: 600;
-  line-height: 1.125;
+  /* line-height: 1.125; */
+  line-height: 2;
 }
 
 .content h1 {
@@ -4952,8 +4953,8 @@ a.tag:hover {
 }
 
 .title {
-  color: #363636;
-  font-size: 2rem;
+  color: #2329D6;
+  font-size: 3rem;
   font-weight: 600;
   line-height: 1.125;
 }
@@ -4972,7 +4973,7 @@ a.tag:hover {
 }
 
 .title.is-1 {
-  font-size: 3rem;
+  font-size: 8rem;
 }
 
 .title.is-2 {
@@ -5003,7 +5004,7 @@ a.tag:hover {
   color: #4a4a4a;
   font-size: 1.25rem;
   font-weight: 400;
-  line-height: 1.25;
+  line-height: 1.75;
 }
 
 .subtitle strong {
