@@ -732,7 +732,7 @@ article {
 	text-align: center;
 }
 #sketchContainer canvas {
-	margin: 20px;
+	margin: 20px 0px;
 	border: 1px solid #efefef;
 	padding: 30px;
 	border-radius: 14px;
