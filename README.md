@@ -1,1 +1,0 @@
-# speech-doodle-front-end
