@@ -137,12 +137,12 @@ function uploadSoundData(blob) {
 function setup() {
 	let canvas = createCanvas(255, 255)
 	canvas.parent('sketchContainer')
-	background('#27273a')
+	background('#fcfcfc')
 }
 // assign one image at a time
 function newSketchObj() {
 	if (imageCount < sketchObj.length) {
-		background('#27273a')
+		background('#fcfcfc')
 		doodle = undefined
 		doodle = sketchObj[imageCount].drawing
 		// console.log(doodle)
@@ -158,7 +158,7 @@ function draw() {
 			// console.log(doodle)
 			let x = doodle[strokeIndex][0][index]
 			let y = doodle[strokeIndex][1][index]
-			stroke('rgba(255,255,255,0.8)')
+			stroke('rgba(0,0,0,0.8)')
 			// console.log(x)
 
 			strokeWeight(3)
@@ -216,11 +216,11 @@ function visualize(stream) {
 
 		analyser.getByteTimeDomainData(dataArray)
 
-		canvasCtx.fillStyle = '#27273a'
+		canvasCtx.fillStyle = '#fcfcfc'
 		canvasCtx.fillRect(0, 0, WIDTH, HEIGHT)
 
 		canvasCtx.lineWidth = 2
-		canvasCtx.strokeStyle = 'rgb(255, 255, 255, 0.8)'
+		canvasCtx.strokeStyle = 'rgb(0, 0, 0, 0.8)'
 
 		canvasCtx.beginPath()
 
