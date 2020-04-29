@@ -1,0 +1,595 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>YODAE | Draw with your words</title>
+    <meta name="description" content="Draw anything you can speak of">
+    <meta name="keywords" content="info@yodae.com">
+
+    <link rel="icon" type="image/png" href="assets\images\favicon.png">
+
+    <!--Core CSS -->
+    <link rel="stylesheet" href="assets\css\bulma.css">
+    <link rel="stylesheet" type="text/css" href="assets\css\core.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+
+    <!--Libraries-->
+    <link rel="stylesheet" type="text/css" href="assets\css\icons.css">
+
+</head>
+
+<body>
+    <!-- <div id="preloader">
+        <div id="status"></div>
+    </div> -->
+    <section class="hero is-fullheight is-default is-bold">
+
+        <nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="index.htm">
+                        <img src="assets\images\logos\YODAE-logo.svg" alt="">
+                    </a>
+
+                    <!-- <a class="navbar-item is-hidden-desktop is-hidden-tablet">
+                        <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
+                            <svg width="1000px" height="1000px">
+                                <path class="path1"
+                                    d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800">
+                                </path>
+                                <path class="path2" d="M 300 500 L 700 500"></path>
+                                <path class="path3"
+                                    d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200">
+                                </path>
+                            </svg>
+                            <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+                        </div>
+                    </a> -->
+
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                        data-target="navbar-menu">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="navbar-menu" class="navbar-menu is-static">
+
+                    <!-- <div class="navbar-start">
+                        <a class="navbar-item is-hidden-mobile">
+                            <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
+                                <svg width="1000px" height="1000px">
+                                    <path class="path1"
+                                        d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800">
+                                    </path>
+                                    <path class="path2" d="M 300 500 L 700 500"></path>
+                                    <path class="path3"
+                                        d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200">
+                                    </path>
+                                </svg>
+                                <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+                            </div>
+                        </a>
+                    </div> -->
+
+                    <div class="navbar-end">
+                        <a href="#features" class="navbar-item is-secondary">
+                            Features
+                        </a>
+                        <a href="#cta" class="navbar-item is-secondary">
+                            CTA
+                        </a>
+                        <a href="#contact" class="navbar-item is-secondary">
+                            Contact
+                        </a>
+                        <!-- <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                                Dropdown
+                            </a>
+
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item">
+                                    Dropdown item
+                                </a>
+                                <a class="navbar-item">
+                                    Dropdown item
+                                </a>
+                                <a class="navbar-item">
+                                    Dropdown item
+                                </a>
+                            </div>
+                        </div> -->
+                        <a href="#" class="navbar-item is-secondary modal-trigger" data-modal="auth-modal">
+                            Sign In
+                        </a>
+                        <!-- <a target="_blank" href="/" class="navbar-item">
+                            <span class="button signup-button rounded secondary-btn raised">
+                                Start Now
+                            </span>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="https://cssninja.io">
+                        <img src="assets\images\logos\bulmaplay-logo.png" alt="" width="88" height="40">
+                    </a>
+
+                    <a class="navbar-item is-hidden-desktop is-hidden-tablet">
+                        <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
+                            <svg width="1000px" height="1000px">
+                                <path class="path1"
+                                    d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800">
+                                </path>
+                                <path class="path2" d="M 300 500 L 700 500"></path>
+                                <path class="path3"
+                                    d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200">
+                                </path>
+                            </svg>
+                            <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+                        </div>
+                    </a>
+
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                        data-target="cloned-navbar-menu">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
+
+                    <div class="navbar-start">
+                        <a class="navbar-item is-hidden-mobile">
+                            <div id="cloned-menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
+                                <svg width="1000px" height="1000px">
+                                    <path class="path1"
+                                        d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800">
+                                    </path>
+                                    <path class="path2" d="M 300 500 L 700 500"></path>
+                                    <path class="path3"
+                                        d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200">
+                                    </path>
+                                </svg>
+                                <button id="cloned-menu-icon-trigger" class="menu-icon-trigger"></button>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="navbar-end">
+                        <a href="#features" class="navbar-item is-secondary">
+                            Features
+                        </a>
+                        <a href="#cta" class="navbar-item is-secondary">
+                            CTA
+                        </a>
+                        <a href="#contact" class="navbar-item is-secondary">
+                            Contact
+                        </a>
+                        <!-- <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                                Dropdown
+                            </a>
+
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item">
+                                    Dropdown item
+                                </a>
+                                <a class="navbar-item">
+                                    Dropdown item
+                                </a>
+                                <a class="navbar-item">
+                                    Dropdown item
+                                </a>
+                            </div>
+                        </div> -->
+                        <a href="#" class="navbar-item is-secondary modal-trigger" data-modal="auth-modal">
+                            Sign in
+                        </a>
+                        <a target="_blank" href="https://appseed.us/apps/bulma-css/bulmaplay" class="navbar-item">
+                            <span class="button signup-button rounded secondary-btn raised">
+                                Start Now
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column is-5 is-offset-1 landing-caption">
+                        <h1 class="title is-1 is-bold is-spaced">
+                            YODAE
+                        </h1>
+                        <p class="subtitle is-muted">
+                            Draw doodles with your voice.
+                        </p>
+                        <div class="field is-grouped">
+                            <div class=control>
+                                <a class="button cta rounded primary-btn raised" href="/">
+                                    Start a project
+                                </a> 
+                            </div>
+                            <div class=control>
+                                <a href="#how" class="button cta rounded is-light is-outlined primary-btn raised">
+                                    How does it work?
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-5 is-offset-1">
+                        <figure class="image is-4by4">
+                            <img class="lazy" src="assets\images\absurd\08-low.png"
+                                data-src="assets/images/absurd/08.png"
+                                alt="Absurd image, Man with a bulb head - BulmaPlay made with Bulma CSS.">
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="hero-foot mb-20">
+            <div class="container">
+                <div class="tabs is-centered">
+                    <ul>
+                        <li><a href="#"><img alt="Bulma CSS Web App, BulmaPlay - Partner 1."
+                                    src="assets\images\logos\absurd-01-low.png" class="partner-logo lazy"
+                                    data-src="assets/images/logos/absurd-01.png"></a></li>
+                        <li><a href="#"><img alt="Bulma CSS Web App, BulmaPlay - Partner 2."
+                                    src="assets\images\logos\absurd-02-low.png" class="partner-logo lazy"
+                                    data-src="assets/images/logos/absurd-02.png"></a></li>
+                        <li><a href="#"><img alt="Bulma CSS Web App, BulmaPlay - Partner 3."
+                                    src="assets\images\logos\absurd-03-low.png" class="partner-logo lazy"
+                                    data-src="assets/images/logos/absurd-03.png"></a></li>
+                        <li><a href="#"><img alt="Bulma CSS Web App, BulmaPlay - Partner 4."
+                                    src="assets\images\logos\absurd-04-low.png" class="partner-logo lazy"
+                                    data-src="assets/images/logos/absurd-04.png"></a></li>
+                        <li><a href="#"><img alt="Bulma CSS Web App, BulmaPlay - Partner 5."
+                                    src="assets\images\logos\absurd-05-low.png" class="partner-logo lazy"
+                                    data-src="assets/images/logos/absurd-05.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+    </section>
+
+    <section id="features" class="section section-feature-grey is-medium">
+
+        <div class=container>
+            <div class="section-header has-text-centered">
+                <h2 class="title is-1 is-spaced"> A little about YODAE </h2>
+                <h3 class="subtitle is-4">
+                    It’s an experimental project that uses Google Speech API and Natural Language API to interpret voice
+                    commands and render doodles using QuickDraw database. Our goal to you, is to have a fun doodling web experience.
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="title-wrapper has-text-centered">
+                <div class="divider is-centered"></div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section class="section is-medium">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-centered-tablet-portrait">
+                    <h2 class="title section-title">Fun. Easy. Creative.</h2>
+                    <h3 class="subtitle is-4 is-muted">YODAE is a interactive digital platform that It’s easy as 1-2-3. </h3>
+                    <div class="divider"></div>
+                </div>
+            </div>
+            <div class="content-wrapper">
+                <div class="columns">
+                    <div class="column is-one-third">
+                        <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1"
+                            data-animation="fadeInLeft">
+                            <div class="card-title">
+                                <h4>Pixel perfect</h4>
+                            </div>
+                            <div class="card-icon">
+                                <img alt="AppSeed App Generator Logo." class="lazy"
+                                    data-src="assets/images/illustrations/icons/mouse-globe.svg">
+                            </div>
+                            <div class="card-text">
+                                <p>Flexbox based. Mobile First layout, small footprint</p>
+                            </div>
+                            <div class="card-action">
+                                <a target="_blank" href="" class="button btn-align-md accent-btn raised">Get Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="feature-card is-bordered has-text-centered revealOnScroll delay-2"
+                            data-animation="fadeInLeft">
+                            <div class="card-title">
+                                <h4>Tooling</h4>
+                            </div>
+                            <div class="card-icon">
+                                <img class="lazy" data-src="assets/images/illustrations/icons/laptop-cloud.svg">
+                            </div>
+                            <div class="card-text">
+                                <p>Generated with Panini Static Generator. Gulp Scripts</p>
+                            </div>
+                            <div class="card-action">
+                                <a target="_blank" href="" class="button btn-align-md secondary-btn raised">Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="feature-card is-bordered has-text-centered revealOnScroll delay-3"
+                            data-animation="fadeInLeft">
+                            <div class="card-title">
+                                <h4>Documented</h4>
+                            </div>
+                            <div class="card-icon">
+                                <img class="lazy" data-src="assets/images/illustrations/icons/plug-cloud.svg">
+                            </div>
+                            <div class="card-text">
+                                <p>Read More about JAMStack and Bulma Css on our blog</p>
+                            </div>
+                            <div class="card-action">
+                                <a target="_blank" href="https://blog.appseed.us"
+                                    class="button btn-align-md primary-btn raised">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="section section-feature-grey is-medium">
+        <div class="container">
+
+            <div class="columns">
+                <div class="column is-10 is-offset-1">
+                    <div class="has-text-centered">
+                        <img alt="JAMStack Bulma CSS Web App - Main Image." class="pushed-image lazy"
+                            src="assets\images\illustrations\mockups\bulma-css-app-mockup-low.png"
+                            data-src="assets/images/illustrations/mockups/bulma-css-app-mockup.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="title-wrapper has-text-centered">
+                <h2 class="title is-2">Coding is fun</h2>
+                <h3 class="subtitle is-5 is-muted">Built with Bulma CSS and JAMStack</h3>
+            </div>
+
+            <p class="has-text-centered mt-20">
+                <a target="_blank" href="https://github.com/app-generator/bulmaplay"
+                    class="button cta is-large rounded secondary-btn raised">
+                    Get Code
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <section class="section is-medium section-secondary">
+        <div class="container">
+
+            <div class="title-wrapper has-text-centered">
+                <h2 class="title is-2 light-text is-spaced">Work Less. Live More</h2>
+                <h3 class="subtitle is-5 light-text">Built your next app with Bulma Css and JAMStack.</h3>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="columns is-vcentered">
+                    <div class="column is-4">
+                        <figure class="testimonial">
+                            <blockquote>
+                                Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu,
+                                ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+                            </blockquote>
+                            <div class="author">
+                                <img class="lazy" data-src="assets/images/illustrations/faces/1.png" alt="">
+                                <h5>Irma Walters</h5><span>Accountant</span>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="column is-4">
+                        <figure class="testimonial">
+                            <blockquote>
+                                Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu,
+                                ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+                            </blockquote>
+                            <div class="author">
+                                <img class="lazy" data-src="assets/images/illustrations/faces/2.png" alt="">
+                                <h5>John Bradley</h5><span>Financial Analyst</span>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="column is-4">
+                        <figure class="testimonial">
+                            <blockquote>
+                                Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu,
+                                ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
+                            </blockquote>
+                            <div class="author">
+                                <img class="lazy" data-src="assets/images/illustrations/faces/3.png" alt="">
+                                <h5>Gary Blackman</h5><span>HR Manager</span>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section section-light-grey is-medium">
+        <div class="container">
+            <div class="title-wrapper has-text-centered">
+                <h2 class="title is-2 is-spaced">Enjoy this Bulma App?</h2>
+                <h3 class="subtitle is-5 is-muted">We'd love to hear your opinion about it!</h3>
+                <div class="divider is-centered"></div>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="columns">
+                    <div class="column is-6 is-offset-3">
+                        <form>
+                            <div class="columns is-multiline">
+                                <div class="column is-6">
+                                    <input class="input is-medium" type="text" placeholder="Enter your Name">
+                                </div>
+                                <div class="column is-6">
+                                    <input class="input is-medium" type="email" placeholder="Enter your Email">
+                                </div>
+                                <div class="column is-12">
+                                    <textarea class="textarea" rows="10" placeholder="Write someting ..."></textarea>
+                                </div>
+                                <div class="form-footer has-text-centered mt-10">
+                                    <button type="button" class="button cta is-large primary-btn raised is-clear">Send
+                                        Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="auth-modal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="flex-card auth-card">
+                <div class="tabs-wrapper">
+                    <div class="tabs">
+                        <ul>
+                            <li class="is-active" data-tab="login-tab"><a>Login</a></li>
+                            <li data-tab="register-tab"><a>Register</a></li>
+                        </ul>
+                    </div>
+                    <div id="login-tab" class="tab-content is-active">
+                        <div class="field">
+                            <label>Username</label>
+                            <div class="control">
+                                <input type="text" class="input is-medium" placeholder="Enter username">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>Password</label>
+                            <div class="control">
+                                <input type="password" class="input is-medium" placeholder="Enter password">
+                            </div>
+                        </div>
+
+                        <a class="button is-fullwidth secondary-btn is-rounded raised">Log in</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <footer class="footer footer-dark">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <div class="footer-logo">
+                        <img alt="Footer Logo for BulmaPlay - JAMStack Bulma CSS Web App."
+                            src="assets\images\logos\bulmaplay-logo.png">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="footer-column">
+                        <div class="footer-header">
+                            <h3>App Info</h3>
+                        </div>
+                        <ul class="link-list">
+                            <li><a href="https://github.com/app-generator/bulmaplay">Get Code</a></li>
+                            <li><a href="https://appseed.us/apps/bulma-css">More Bulma Apps</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="footer-column">
+                        <div class="footer-header">
+                            <h3>Docs</h3>
+                        </div>
+                        <ul class="link-list">
+                            <li><a href="https://docs.appseed.us/apps/bulma-css/bulmaplay">Documentation</a></li>
+                            <li><a href="https://blog.appseed.us/bulmaplay-jamstack-app-built-with-bulma-css">Blog
+                                    Article</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="footer-column">
+                        <div class="footer-header">
+                            <h3>Credits</h3>
+                        </div>
+                        <ul class="link-list">
+                            <li><a href="https://absurd.design/">Absurd Design</a></li>
+                            <li><a href="https://github.com/cssninjaStudio/fresh">CSS Ninja</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="footer-column">
+                        <div class="footer-header">
+                            <h3>Follow US</h3>
+                            <nav class="level is-mobile">
+                                <div class="level-left">
+                                    <a class="level-item" href="https://github.com/app-generator/bulmaplay">
+                                        <span class="icon"><i class="fa fa-github"></i></span>
+                                    </a>
+                                    <a class="level-item" href="https://facebook.com/webappseed">
+                                        <span class="icon"><i class="fa fa-facebook"></i></span>
+                                    </a>
+                                    <a class="level-item" href="https://twitter.com/webappseed">
+                                        <span class="icon"><i class="fa fa-twitter"></i></span>
+                                    </a>
+                                    <a class="level-item" href="https://instagram.com/webappseed">
+                                        <span class="icon"><i class="fa fa-instagram"></i></span>
+                                    </a>
+                                </div>
+                            </nav>
+
+                            <a href="https://bulma.io" target="_blank">
+                                <img src="assets\images\logos\made-with-bulma.png" alt="Made with Bulma" width="128"
+                                    height="24">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back To Top Button -->
+    <div id="backtotop"><a href="#"></a></div>
+
+    <script src="assets\js\bundle.js"></script>
+
+    <!-- JS -->
+    <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+    <script src="assets\js\app.js"></script>
+    <!-- /JS -->
+</body>
+
+</html>
