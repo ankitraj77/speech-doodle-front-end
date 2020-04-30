@@ -1,0 +1,466 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>YODAE | Draw with your words</title>
+    <meta name="description" content="Open-Source app, built on top of Bulma CSS and coded in JAMstack pattern.">
+    <meta name="keywords" content="support@appseed.us">
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+    <!--Core CSS -->
+    <link rel="stylesheet" href="assets/css/bulma.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/core.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+
+    <!--Libraries-->
+    <link rel="stylesheet" type="text/css" href="assets/css/icons.css">
+
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div id="status"></div>
+    </div>
+
+
+    <section class="hero is-fullheight is-default is-bold">
+        <nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="/">
+                        <img src="assets/images/logos/YODAE-logo.svg" alt="" height="200">
+                    </a>
+
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                        data-target="navbar-menu">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="navbar-menu" class="navbar-menu is-static">
+                    <div class="navbar-end">
+                        <a href="#features" class="navbar-item is-secondary">
+                            Features
+                        </a>
+                    
+                        <a href="#contact" class="navbar-item is-secondary">
+                            About Us
+                        </a>
+                    
+                        <a target="_blank" href="#about-us" class="navbar-item">
+                            <span class="button signup-button rounded secondary-btn raised">
+                                Read More
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="/">
+                        <img src="assets/images/logos/YODAE-logo.svg" height="40">
+                    </a>
+
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                        data-target="cloned-navbar-menu">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
+                    <div class="navbar-end">
+                        <a href="#features" class="navbar-item is-secondary">
+                            Features
+                        </a>
+                        <a href="#cta" class="navbar-item is-secondary">
+                            About Us
+                        </a>
+
+                        <a target="_blank" href="https://appseed.us/apps/bulma-css/bulmaplay" class="navbar-item">
+                            <span class="button signup-button rounded secondary-btn raised">
+                                Read More
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="column is-5 is-offset-1 landing-caption">
+                        <h1 class="title is-1 is-bold is-spaced">
+                            YODAE
+                        </h1>
+                        <p class="subtitle is-muted">
+                            Say what you want and draw doodles with your voice. 
+                        </p>
+                        <p>
+                            <a target="_blank" href="/"
+                                class="button cta rounded primary-btn raised">
+                                Start Doodling
+                            </a>
+                        </p>
+                    </div>
+                    <!-- <div class="column is-5 is-offset-1">
+                        <figure class="image is-4by4">
+                            <img class="lazy" src="assets/images/absurd/08-low.png"
+                                data-src="assets/images/absurd/08.png"
+                                alt="Absurd image, Man with a bulb head - BulmaPlay made with Bulma CSS.">
+                        </figure>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="section section-feature-grey is-medium">
+        <div class="container">
+            <div class="title-wrapper has-text-centered">
+                <h2 class="title is-2">About YODAE</h2>
+                <h3 class="subtitle is-5 is-muted">
+                    It’s an experimental project that uses Google Speech API and Natural Language API
+                    to interpret voice commands and render doodles using Quick,Draw! database. Our goal for you,
+                    is to have a fun doodling web experience.
+                </h3>
+                <div class="divider is-centered"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section is-medium">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-centered-tablet-portrait">
+                    <h2 class="title section-title">Fun. Easy. Creative.</h2>
+                    <h3 class="subtitle is-4 is-muted">And we know it</h3>
+                    <div class="divider"></div>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="columns">
+                    <div class="column is-one-third">
+                        <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1"
+                            data-animation="fadeInLeft">
+                            <div class="card-title">
+                                <h4>Tap & hold</h4>
+                            </div>
+                            <div class="card-icon">
+                                <img alt="AppSeed App Generator Logo." class="lazy"
+                                    data-src="assets/images/illustrations/icons/mouse-globe.svg">
+                            </div>
+                            <div class="card-text">
+                                <p>Tap and hold the record button to start your recording</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="feature-card is-bordered has-text-centered revealOnScroll delay-2"
+                            data-animation="fadeInLeft">
+                            <div class="card-title">
+                                <h4>Speak your command</h4>
+                            </div>
+                            <div class="card-icon">
+                                <img class="lazy" data-src="assets/images/illustrations/icons/laptop-cloud.svg">
+                            </div>
+                            <div class="card-text">
+                                <p>Start your command with “Draw me a…(and a noun of your choice)”. Try, "Draw a ball".</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="feature-card is-bordered has-text-centered revealOnScroll delay-3"
+                            data-animation="fadeInLeft">
+                            <div class="card-title">
+                                <h4>YODAE thinks and ta-da!</h4>
+                            </div>
+                            <div class="card-icon">
+                                <img class="lazy" data-src="assets/images/illustrations/icons/plug-cloud.svg">
+                            </div>
+                            <div class="card-text">
+                                <p>In just seconds, your command from a dataset by Quick, Draw! will render a doodle to appear.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="section section-feature-grey is-medium">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-10 is-offset-1">
+                    <div class="has-text-centered">
+                        <!-- <img alt="JAMStack Bulma CSS Web App - Main Image." class="pushed-image lazy"
+                            src="assets/images/illustrations/mockups/bulma-css-app-mockup-low.png"
+                            data-src="assets/images/illustrations/mockups/bulma-css-app-mockup.png"> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="title-wrapper has-text-centered">
+                <h2 class="title is-2">Imagination can go everywhere.</h2>
+                <h3 class="subtitle is-5 is-muted">And so can your doodles. Just try speaking and it gets better.</h3>
+            </div>
+
+            <p class="has-text-centered mt-20">
+                <a target="_blank" href="/"
+                    class="button cta is-large rounded secondary-btn raised">
+                    Speak and Draw
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <section class="section is-medium section-secondary">
+        <div class="container">
+
+            <div class="title-wrapper has-text-centered">
+                <h2 class="title is-2 light-text is-spaced">Why YODAE you ask?</h2>
+                <h3 class="subtitle is-5 light-text">A brief look at the people who made this.</h3>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="columns is-vcentered">
+                    <div class="column is-4">
+                        <figure class="testimonial">
+                            <blockquote>
+                                Yang Yang
+                                <p><a href="http://www.yangyang.com" target="_blank">See Portfolio</a></p>
+                            </blockquote>
+                            <div class="author">
+                                <img class="lazy" data-src="assets/images/illustrations/faces/1.png" alt="" />
+                                <h5></h5>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="column is-4">
+                        <figure class="testimonial">
+                            <blockquote>
+                                Oby Okoye
+                            </blockquote>
+                            <div class="author">
+                                <img class="lazy" data-src="assets/images/illustrations/faces/1.png" alt="" />
+                                <h5></h5>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="column is-4">
+                        <figure class="testimonial">
+                            <blockquote>
+                                Drashya Gohil
+                            </blockquote>
+                            <div class="author">
+                                <img class="lazy" data-src="assets/images/illustrations/faces/1.png" alt="" />
+                                <h5></h5>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="columns is-vcentered">
+                    <div class="column is-4">
+                        <figure class="testimonial">
+                            <blockquote>
+                                Ankit Raj Gupta
+                            </blockquote>
+                            <div class="author">
+                                <img class="lazy" data-src="assets/images/illustrations/faces/1.png" alt="" />
+                                <h5></h5>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="column is-4">
+                        <figure class="testimonial">
+                            <blockquote>
+                                Eileen Santiago
+                            </blockquote>
+                            <div class="author">
+                                <img class="lazy" data-src="assets/images/illustrations/faces/1.png" alt="" />
+                                <h5></h5>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="column is-4">
+                        <figure class="testimonial">
+                            <blockquote>
+                                YODAE
+                            </blockquote>
+                            <div class="author">
+                                <img class="lazy" data-src="assets/images/illustrations/faces/3.png" alt="" />
+                                <h5></h5><span></span>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div id="auth-modal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="flex-card auth-card">
+                <div class="tabs-wrapper">
+                    <div class="tabs">
+                        <ul>
+                            <li class="is-active" data-tab="login-tab"><a>Login</a></li>
+                            <li data-tab="register-tab"><a>Register</a></li>
+                        </ul>
+                    </div>
+                    <div id="login-tab" class="tab-content is-active">
+                        <div class="field">
+                            <label>Username</label>
+                            <div class="control">
+                                <input type="text" class="input is-medium" placeholder="Enter username">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label>Password</label>
+                            <div class="control">
+                                <input type="password" class="input is-medium" placeholder="Enter password">
+                            </div>
+                        </div>
+
+                        <a class="button is-fullwidth secondary-btn is-rounded raised">Log in</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div> -->
+
+    <footer class="footer footer-dark">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <div class="footer-logo">
+                        <img alt="Footer Logo for BulmaPlay - JAMStack Bulma CSS Web App."
+                            src="assets/images/logos/YODAE-logo.svg">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="footer-column">
+                        <div class="footer-header">
+                            <h3>App Info</h3>
+                        </div>
+                        <ul class="link-list">
+                            <li><a href="https://github.com/app-generator/bulmaplay">Get Code</a></li>
+                            <li><a href="https://appseed.us/apps/bulma-css">More Bulma Apps</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="footer-column">
+                        <div class="footer-header">
+                            <h3>Docs</h3>
+                        </div>
+                        <ul class="link-list">
+                            <li><a href="https://docs.appseed.us/apps/bulma-css/bulmaplay">Documentation</a></li>
+                            <li><a href="https://blog.appseed.us/bulmaplay-jamstack-app-built-with-bulma-css">Blog
+                                    Article</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="footer-column">
+                        <div class="footer-header">
+                            <h3>Credits</h3>
+                        </div>
+                        <ul class="link-list">
+                            <li><a href="https://absurd.design/">Absurd Design</a></li>
+                            <li><a href="https://github.com/cssninjaStudio/fresh">CSS Ninja</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="footer-column">
+                        <div class="footer-header">
+                            <h3>Follow US</h3>
+                            <nav class="level is-mobile">
+                                <div class="level-left">
+                                    <a class="level-item" href="https://github.com/app-generator/bulmaplay">
+                                        <span class="icon"><i class="fa fa-github"></i></span>
+                                    </a>
+                                    <a class="level-item" href="https://facebook.com/webappseed">
+                                        <span class="icon"><i class="fa fa-facebook"></i></span>
+                                    </a>
+                                    <a class="level-item" href="https://twitter.com/webappseed">
+                                        <span class="icon"><i class="fa fa-twitter"></i></span>
+                                    </a>
+                                    <a class="level-item" href="https://instagram.com/webappseed">
+                                        <span class="icon"><i class="fa fa-instagram"></i></span>
+                                    </a>
+                                </div>
+                            </nav>
+
+                            <!-- <a href="https://bulma.io" target="_blank">
+                                <img src="assets/images/logos/made-with-bulma.png" alt="Made with Bulma" width="128"
+                                    height="24">
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back To Top Button -->
+    <div id="backtotop"><a href="#"></a></div>
+
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <img src="assets/images/logos/fresh-square.svg">
+            <a class="sidebar-close" href="javascript:void(0);"><i data-feather="x"></i></a>
+        </div>
+        <div class="inner">
+            <ul class="sidebar-menu">
+                <li><span class="nav-section-title"></span></li>
+                <li class="have-children"><a href="#"><span class="fa fa-info-circle"></span>About</a>
+                    <ul>
+                        <li><a target="_blank" href="https://docs.appseed.us/apps/bulma-css/bulmaplay">Documentation</a>
+                        </li>
+                        <li><a target="_blank" href="https://github.com/app-generator/bulmaplay">Sources</a></li>
+                        <li><a target="_blank" href="https://appseed.us/apps/bulma-css/bulmaplay">Product</a></li>
+                        <li><a target="_blank"
+                                href="https://blog.appseed.us/bulmaplay-jamstack-app-built-with-bulma-css">Blog</a></li>
+                    </ul>
+                </li>
+                <li class="have-children"><a href="#"><span class="fa fa-cog"></span>Support</a>
+                    <ul>
+                        <li><a target="_blank" href="https://github.com/app-generator/bulmaplay/issues/new">Github</a>
+                        </li>
+                        <li><a target="_blank" href="https://discord.gg/fZC6hup">Discord</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div> <!-- jQuery first, then Bootstrap JS. -->
+    <script src="assets/js/bundle.js"></script>
+
+    <!-- JS -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+    <script src="assets/js/app.js"></script>
+    <!-- /JS -->
+</body>
+
+</html>
