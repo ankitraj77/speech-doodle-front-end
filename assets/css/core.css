@@ -1472,11 +1472,15 @@ Customization
   font-size: 8rem;
   color: #2329D6;
 }
+
+.cta-btns.field.is-grouped.is-centered {
+  justify-content: center;
+}
 @media (max-width: 1024px) {
   .title.is-1 {
     font-size:6rem;
   }
-  
+
  
 }
 
@@ -1486,10 +1490,14 @@ Customization
   }
   .field.is-grouped {
     display:block;
+
+    
   }
+
   .field.is-grouped > .control:not(:last-child) {
     margin-right: 0px;
   }
+  
   div.cta-btns .control {
     text-align:center;
   }
