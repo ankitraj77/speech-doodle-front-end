@@ -4,6 +4,7 @@ Main SCSS file / Fresh
 /* ==========================================================================
 Color variables
 ========================================================================== */
+
 /* ==========================================================================
 Navbar
 ========================================================================== */
@@ -1144,6 +1145,17 @@ Responsive Styles
   .landing-caption {
     text-align: center;
   }
+  /* .is-group {
+    text-align: center;
+  } */
+
+  .has-bg-img {
+    background: url('/assets/images/illustrations/hero-bg.svg')center center; 
+    background-size:cover; 
+    background-size: 100%; 
+  }
+
+
   .navbar-menu .is-static {
     position: absolute;
     width: 100%;
@@ -1444,7 +1456,9 @@ body #backtotop a {
 }
 
 
-/* CUSTOM CSS */
+/* ==========================================================================
+Customization
+========================================================================== */
 
 .card.is-usp {
   max-width: 320px;
@@ -1455,6 +1469,35 @@ body #backtotop a {
 .card.is-usp .subtitle {
   line-height: 1.66667
 }
+
+.title.is-1 {
+  font-size: 8rem;
+  color: #2329D6;
+}
+
+.how-it-work {
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.landing-caption {
+  text-align: center;
+}
+.has-bg-img { 
+  background: url('/assets/images/illustrations/hero-bg.svg')center center; 
+  background-size:cover; 
+}
+
+.demo-icon {
+  background:url('/assets/images/icons/icon-play.svg') no-repeat left center;
+  width:20px;
+  height:20px;
+}
+
+
 
 
 
