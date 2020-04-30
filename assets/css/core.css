@@ -1145,9 +1145,7 @@ Responsive Styles
   .landing-caption {
     text-align: center;
   }
-  /* .is-group {
-    text-align: center;
-  } */
+  
 
   .has-bg-img {
     background: url('/assets/images/illustrations/hero-bg.svg')center center; 
@@ -1474,14 +1472,45 @@ Customization
   font-size: 8rem;
   color: #2329D6;
 }
+@media (max-width: 1024px) {
+  .title.is-1 {
+    font-size:6rem;
+  }
+  
+ 
+}
+
+@media (max-width: 767px) {
+  .title.is-1 {
+    font-size:6rem;
+  }
+  .field.is-grouped {
+    display:block;
+  }
+  .field.is-grouped > .control:not(:last-child) {
+    margin-right: 0px;
+  }
+  div.cta-btns .control {
+    text-align:center;
+  }
+  .button.cta {
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  
+
+}
 
 .how-it-work {
   padding: 20px;
+  
 }
 
 h2 {
   margin-bottom: 20px;
 }
+
 
 .landing-caption {
   text-align: center;
@@ -1493,8 +1522,8 @@ h2 {
 
 .demo-icon {
   background:url('/assets/images/icons/icon-play.svg') no-repeat left center;
-  width:20px;
-  height:20px;
+  width:50px;
+  height:50px;
 }
 
 
