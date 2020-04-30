@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="98" height="98" viewBox="0 0 98 98">
+  <defs>
+    <filter id="Ellipse_2" x="0" y="0" width="98" height="98" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#bfbfbf" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Component_5_12" data-name="Component 5 – 12" transform="translate(15 10)">
+    <g transform="matrix(1, 0, 0, 1, -15, -10)" filter="url(#Ellipse_2)">
+      <circle id="Ellipse_2-2" data-name="Ellipse 2" cx="34" cy="34" r="34" transform="translate(15 10)" fill="#b9bbf0"/>
+    </g>
+    <g id="microphone" transform="translate(23.028 15.87)">
+      <path id="Path_1" data-name="Path 1" d="M28.724,12A10.862,10.862,0,1,1,7,12M17.862,22.862v8.689" transform="translate(-7 5.379)" fill="none" stroke="#2329d6" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="3"/>
+      <rect id="Rectangle_5" data-name="Rectangle 5" width="8" height="22" rx="2" transform="translate(6.972 0.13)" stroke-width="3" stroke="#2329d6" stroke-linecap="round" stroke-linejoin="bevel" fill="#2329d6"/>
+    </g>
+  </g>
+</svg>
